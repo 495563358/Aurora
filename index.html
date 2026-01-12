@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>长沙北极光科技有限公司 官方网站</title>
+  <meta name="description" content="长沙北极光科技有限公司官方网站，提供产品介绍、解决方案与联系方式。" />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light: #f8fafc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+    }
+    nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; }
+    .logo { font-size: 20px; font-weight: 700; color: var(--primary); }
+
+    .hero {
+      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      color: #fff;
+      padding: 120px 0 100px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 44px; margin-bottom: 16px; }
+    .hero p { font-size: 18px; opacity: .9; margin-bottom: 32px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section { padding: 80px 0; }
+    h2 { font-size: 32px; text-align: center; margin-bottom: 16px; }
+    .subtitle { text-align: center; color: var(--gray); margin-bottom: 48px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 24px;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,.04);
+    }
+    .card p { color: var(--gray); }
+
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">北极光科技</div>
+        <div>
+          <a href="#about">关于我们</a>
+          <a href="#products">产品服务</a>
+          <a href="#contact">联系我们</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>长沙北极光科技有限公司</h1>
+        <p>专注技术创新，提供可靠的数字化解决方案</p>
+        <a href="#contact" class="btn">联系我们</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>关于我们</h2>
+        <p class="subtitle">值得信赖的科技合作伙伴</p>
+        <p style="max-width:800px;margin:0 auto;color:var(--gray);text-align:center;">
+          长沙北极光科技有限公司致力于为客户提供高质量、可持续发展的技术产品与服务，
+          通过持续创新助力企业实现数字化升级。
+        </p>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2>产品与服务</h2>
+        <p class="subtitle">多场景技术解决方案</p>
+        <div class="grid">
+          <div class="card"><h3>软件开发</h3><p>定制化系统与应用开发服务</p></div>
+          <div class="card"><h3>技术支持</h3><p>稳定可靠的运维与支持</p></div>
+          <div class="card"><h3>解决方案</h3><p>企业级数字化整体方案</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>联系我们</h2>
+        <p class="subtitle">期待与您合作</p>
+        <p style="text-align:center;color:var(--gray);">
+          邮箱：auroraborealistechnology@gmail.com<br/>
+          地址：湖南省长沙市芙蓉区东屯渡街道远大一路608号
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 长沙北极光科技有限公司 · 版权所有
+  </footer>
+</body>
+</html>

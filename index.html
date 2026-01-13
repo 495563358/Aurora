@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>长沙北极光科技有限公司 官方网站</title>
+  <title>长沙北极光科技有限公司 · Changsha Aurora Technology Co., Ltd</title>
   <meta name="description" content="长沙北极光科技有限公司官方网站，提供产品介绍、解决方案与联系方式。" />
   <style>
     :root {
       --primary: #2563eb;
-      --dark: #0f172a;
-      --gray: #64748b;
+      --primary-light: #60a5fa;
+      --dark: #0b1220;
+      --gray: #6b7280;
       --light: #f8fafc;
+      --bg-soft: #f1f5f9;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
       color: var(--dark);
-      line-height: 1.6;
+      line-height: 1.7;
+      background: var(--bg-soft);
+      -webkit-font-smoothing: antialiased;
     }
     header {
       position: sticky;
@@ -33,10 +37,15 @@
       height: 64px;
     }
     nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; }
-    .logo { font-size: 20px; font-weight: 700; color: var(--primary); }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: .5px;
+    }
 
     .hero {
-      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      background: linear-gradient(135deg, #1e3a8a, #2563eb, #60a5fa);
       color: #fff;
       padding: 120px 0 100px;
       text-align: center;
@@ -53,7 +62,7 @@
       text-decoration: none;
     }
 
-    section { padding: 80px 0; }
+    section style="background:#fff;" { padding: 80px 0; }
     h2 { font-size: 32px; text-align: center; margin-bottom: 16px; }
     .subtitle { text-align: center; color: var(--gray); margin-bottom: 48px; }
 
@@ -64,10 +73,15 @@
     }
     .card {
       border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 24px;
-      background: #fff;
-      box-shadow: 0 10px 20px rgba(0,0,0,.04);
+      border-radius: 20px;
+      padding: 28px;
+      background: #ffffff;
+      box-shadow: 0 20px 40px rgba(15,23,42,.08);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(15,23,42,.15);
     }
     .card p { color: var(--gray); }
 
@@ -95,15 +109,7 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>长沙北极光科技有限公司</h1>
-        <p>专注技术创新，提供可靠的数字化解决方案</p>
-        <a href="#contact" class="btn">联系我们</a>
-      </div>
-    </section>
-
-    <section id="about">
+    <section id="about" style="background:#fff;">
       <div class="container">
         <h2>关于我们</h2>
         <p class="subtitle">值得信赖的科技合作伙伴</p>
@@ -114,7 +120,7 @@
       </div>
     </section>
 
-    <section id="products">
+    <section id="products" style="background:#fff;">
       <div class="container">
         <h2>产品与服务</h2>
         <p class="subtitle">多场景技术解决方案</p>
@@ -126,12 +132,12 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="background:#fff;">
       <div class="container">
         <h2>联系我们</h2>
         <p class="subtitle">期待与您合作</p>
         <p style="text-align:center;color:var(--gray);">
-          邮箱：auroraborealistechnology@gmail.com<br/>
+          邮箱：aurora@auroraborealis.top<br/>
           地址：湖南省长沙市芙蓉区东屯渡街道远大一路608号
         </p>
       </div>
@@ -139,7 +145,7 @@
   </main>
 
   <footer>
-    © 2026 长沙北极光科技有限公司 · 版权所有
+    © 2026 长沙北极光科技有限公司 · Changsha Aurora Technology Co., Ltd · All Rights Reserved
   </footer>
 </body>
 </html>
